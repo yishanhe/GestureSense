@@ -143,7 +143,7 @@ public class MoveTrackActivity extends ActionBarActivity implements SensorEventL
             DecimalFormat df = new DecimalFormat("0.0000");
             try {
                 bw = new BufferedWriter(new FileWriter(
-                        createNewFile(SAVE_DIR, "serv_acc")));
+                        createNewFile(SAVE_DIR, "cs644_acc")));
                 for(int i=0; i<accIndex; i++){
                     bw.write(String.valueOf(ts_acc[i])+" "+
                             df.format(acc[i][0])+" "+
@@ -164,7 +164,7 @@ public class MoveTrackActivity extends ActionBarActivity implements SensorEventL
             DecimalFormat df = new DecimalFormat("0.0000");
             try {
                 bw = new BufferedWriter(new FileWriter(
-                        createNewFile(SAVE_DIR, "serv_gyro")));
+                        createNewFile(SAVE_DIR, "cs644_gyro")));
                 for(int i=0; i<gyroIndex; i++){
                     bw.write(String.valueOf(ts_gyro[i])+" "+
                             df.format(gyro[i][0])+" "+
